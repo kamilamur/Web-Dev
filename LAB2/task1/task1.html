@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook — Log In or Sign Up</title>
+    <link rel="stylesheet" href="task1.css" />
+  </head>
+
+  <body>
+    <header class="page-header" aria-label="Facebook Login Page Header"></header>
+
+    <main class="page">
+      <section class="layout" aria-label="Login layout">
+        
+        <section class="brand" aria-label="Brand section">
+          <h1 class="brand__logo" aria-label="Facebook logo text">facebook</h1>
+          <p class="brand__tagline">
+            Facebook helps you connect and share with the people in your life.
+          </p>
+        </section>
+
+        
+        <section class="panel" aria-label="Login panel">
+          <form class="card" action="#" method="post" aria-label="Login form">
+            <div class="card__fields">
+              <div class="field">
+                <label class="field__label" for="email">
+                  Email address or phone number
+                </label>
+                <input
+                  class="field__input"
+                  id="email"
+                  name="email"
+                  type="text"
+                  autocomplete="username"
+                  placeholder="Email address or phone number"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="password">Password</label>
+                <input
+                  class="field__input"
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <button class="btn btn--primary" type="submit">Log In</button>
+
+              <a class="link link--center" href="#" aria-label="Forget password">
+                Forgetten password?
+              </a>
+
+              <hr class="divider" />
+
+              <button class="btn btn--success" type="button">
+                Create new account
+              </button>
+            </div>
+          </form>
+
+          <p class="below">
+            <a class="below__bold" href="#">Create a Page</a> for a celebrity, brand or business.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="page-footer" aria-label="Footer"></footer>
+  </body>
+</html>
