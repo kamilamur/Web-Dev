@@ -1,0 +1,25 @@
+<div class="grid">
+  <div class="card" *ngFor="let product of products">
+    <img [src]="product.image" [alt]="product.name" />
+    <h3>{{ product.name }}</h3>
+    <p class="desc">{{ product.description }}</p>
+    <p class="price">{{ product.price }} ₸</p>
+    <div class="stars" aria-label="rating">
+      <span *ngFor="let s of getStars(product.rating)">
+        {{ s ? '★' : '☆' }}
+      </span>
+      <span class="rating-num">{{ product.rating }}</span>
+    </div>
+    <a class="kaspi" [href]="product.link" target="_blank" rel="noopener">
+      Open in Kaspi
+    </a>
+    <div class="share">
+      <a class="btn" [href]="getWhatsappShareUrl(product)" target="_blank" rel="noopener">
+        Share WhatsApp
+      </a>
+      <a class="btn" [href]="getTelegramShareUrl(product)" target="_blank" rel="noopener">
+        Share Telegram
+      </a>
+    </div>
+  </div>
+</div>
