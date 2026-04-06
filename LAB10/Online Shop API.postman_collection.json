@@ -1,0 +1,36 @@
+{
+  "info": {
+    "_postman_id": "c8077970-3b8d-4a4b-baae-7fba9b1d5415",
+    "name": "Online Shop API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53646501"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
